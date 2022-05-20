@@ -22,6 +22,11 @@ class Login extends React.Component {
     };
   }
   iniciarSesion() {
+    if (this.state.usuario === "prueba" && this.state.contrasena === "1234" )
+      this.props.history.push('/views/Motivacion');
+    else 
+      alert("Credenciales invalidas")
+    /*
     console.log('lgin');
     fetch(domain.url + '/api/login-admin/', {
       method: 'POST',
@@ -46,6 +51,7 @@ class Login extends React.Component {
         }
       })
       .catch(error => { console.log(error); });
+      */
   }
 
   onlyNumber(value) {

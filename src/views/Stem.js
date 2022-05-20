@@ -60,7 +60,7 @@ class Stem extends React.Component {
       main_loading: false,
       vi: 0,
       cambio: 0,
-      fin: false,
+      fin: true,
       camb: 0,
     
     }
@@ -73,42 +73,46 @@ class Stem extends React.Component {
       <div className="login-container" style={{ backgroundColor: '#48d1cc' }}>
         
         <Header/>
-        <Modal onHide={() => this.setState({ show: false})} show={ this.state.fin}>     
+
+        <div class="modal-dialog modal-lg" role="document">
+        <Modal onHide={() => this.setState({ fin: false})} show={ this.state.fin}>
+        
+   
                 <label for="preguntas">{preguntas[this.state.camb].pregunta}</label>
                     <Modal.Body>
-                    <input
-                    onChange={ event => { (event.target.value === preguntas[this.state.camb].respuesta) ? alert('Respuesta correcta') : alert('Respuesta incorrecta')}}
-                     type="radio" 
-                    name="preguntas" 
-                    id="preguntas"
-                    value={preguntas[this.state.camb].opcion_1}/>
-                      <label for="preguntas">{preguntas[this.state.camb].opcion_1}</label>
-                      <input 
-                    onChange={ event => { (event.target.value === preguntas[this.state.camb].respuesta) ? alert('Respuesta correcta') : alert('Respuesta incorrecta')}}
-                     id="preguntas" type="radio"
-                     name="preguntas" 
-                     value={preguntas[this.state.camb].opcion_2}></input>
-                      <label for="preguntas">{preguntas[this.state.camb].opcion_2}</label>
-
-                      <input
+                      <div>
+                        <input
+                        onChange={ event => { (event.target.value === preguntas[this.state.camb].respuesta) ? alert('Respuesta correcta') : alert('Respuesta incorrecta')}}
+                        name="preguntas" id="preguntas" type="radio"  class="input-box" value={preguntas[this.state.camb].opcion_1}/>
+                        <label for="preguntas">{preguntas[this.state.camb].opcion_1}</label>
+                      </div>
+                      <div>
+                      <input 
+                        onChange={ event => { (event.target.value === preguntas[this.state.camb].respuesta) ? alert('Respuesta correcta') : alert('Respuesta incorrecta')}}
+                        type="radio" name=" preguntas" id="preguntas" value={preguntas[this.state.camb].opcion_2}></input>
+                          <label for="preguntas">{preguntas[this.state.camb].opcion_2}</label>
+                      </div>
+                      <div>
+                      <input
                       onChange={ event => { (event.target.value === preguntas[this.state.camb].respuesta) ? alert('Respuesta correcta') : alert('Respuesta incorrecta')}}
-                      id="preguntas" type="radio" 
-                      name="preguntas" 
-                      value={preguntas[this.state.camb].opcion_3}></input>
-                      <label for="preguntas"> {preguntas[this.state.camb].opcion_3}</label>  
-                    
+                      type="radio" name="preguntas" id="preguntas" value={preguntas[this.state.camb].opcion_3}></input>
+                      <label for="preguntas">{preguntas[this.state.camb].opcion_3}</label> 
+                      </div>  
+                       
                     </Modal.Body>
+                    
+                    <Modal.Footer>  
                     <Button onClick={() => this.setState({camb: (this.state.camb + 1 > preguntas.length-1) ? preguntas.length-1 : this.state.camb + 1} )}
                                  variant="contained"
                                  color= ''
                                  type="submit"
-                                 style={{ position: 'fixed', top: '25%', lest:10, marginBottom: 10, width: '15%' }}>
+                                 style={{ position: 'fixed', top: '35%', lest:10, marginBottom: 10, width: '15%' }}>
                                   SIGUENTE
                             <FastForward style={{color: '#50555a'}}/></Button>
-                    <Modal.Footer>  
-                         
                     </Modal.Footer>
+                    
                 </Modal>
+                </div>
         <Typography variant="h3" style={{ textAlign: 'center', marginTop: 25, color: '#f5f5f5' }}>S.T.E.M</Typography>
         <video src={videos[this.state.vi]}  alt= 'logo' style={{
                   width: 1080, 
@@ -152,7 +156,9 @@ class Stem extends React.Component {
             </Grid>
       </div>
     );
+ 
   }
+  
 }
 
 export default Stem;

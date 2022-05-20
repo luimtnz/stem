@@ -16,7 +16,7 @@ import Motivacion from './views/Motivacion';
 const routing = (
   <Router>
     <Provider store={store}>
-      <Route path="/" component={Motivacion} />
+      <Route path="/" component={Login} />
       <Route path="/dashboard" component={Main} />
       <Route path="/views/Juegos" component={Juegos} />
       <Route path="/views/Industria4.0" component={Industria4} />

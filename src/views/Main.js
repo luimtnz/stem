@@ -7,7 +7,6 @@ class Main extends React.Component {
     super(props);
     this.state = {
       usuario: JSON.parse(localStorage.getItem('usuario')),
-      informacion: '',
       main_loading: false
     }
   }
@@ -17,7 +16,7 @@ class Main extends React.Component {
   render() {
     return (
       <div className="login-container" style={{ backgroundColor: '#ffb6c1' }}>
-        <Header history={this.props.history}/>
+        <Header/>
       </div>
     );
   }
