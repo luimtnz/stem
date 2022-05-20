@@ -60,7 +60,7 @@ class Stem extends React.Component {
       main_loading: false,
       vi: 0,
       cambio: 0,
-      fin: true,
+      fin: false,
       camb: 0,
     
     }
@@ -73,8 +73,6 @@ class Stem extends React.Component {
       <div className="login-container" style={{ backgroundColor: '#48d1cc' }}>
         
         <Header/>
-
-        <div class="modal-dialog modal-lg" role="document">
         <Modal onHide={() => this.setState({ fin: false})} show={ this.state.fin}>
         
    
@@ -83,13 +81,13 @@ class Stem extends React.Component {
                       <div>
                         <input
                         onChange={ event => { (event.target.value === preguntas[this.state.camb].respuesta) ? alert('Respuesta correcta') : alert('Respuesta incorrecta')}}
-                        name="preguntas" id="preguntas" type="radio"  class="input-box" value={preguntas[this.state.camb].opcion_1}/>
+                        name="preguntas" id="preguntas" type="radio" value={preguntas[this.state.camb].opcion_1 }/>
                         <label for="preguntas">{preguntas[this.state.camb].opcion_1}</label>
                       </div>
                       <div>
                       <input 
                         onChange={ event => { (event.target.value === preguntas[this.state.camb].respuesta) ? alert('Respuesta correcta') : alert('Respuesta incorrecta')}}
-                        type="radio" name=" preguntas" id="preguntas" value={preguntas[this.state.camb].opcion_2}></input>
+                        type="radio" name=" preguntas" id="preguntas" value={preguntas[this.state.camb].opcion_2 }></input>
                           <label for="preguntas">{preguntas[this.state.camb].opcion_2}</label>
                       </div>
                       <div>
@@ -97,8 +95,12 @@ class Stem extends React.Component {
                       onChange={ event => { (event.target.value === preguntas[this.state.camb].respuesta) ? alert('Respuesta correcta') : alert('Respuesta incorrecta')}}
                       type="radio" name="preguntas" id="preguntas" value={preguntas[this.state.camb].opcion_3}></input>
                       <label for="preguntas">{preguntas[this.state.camb].opcion_3}</label> 
-                      </div>  
-                       
+                     </div><div>
+                      <input 
+                        onChange={ event => { (event.target.value === preguntas[this.state.camb].respuesta) ? alert('Respuesta correcta') : alert('Respuesta incorrecta')}}
+                        type="radio" name=" preguntas" id="preguntas" value={preguntas[this.state.camb].opcion_4}></input>
+                          <label for="preguntas">{preguntas[this.state.camb].opcion_4}</label>
+                        </div>
                     </Modal.Body>
                     
                     <Modal.Footer>  
@@ -112,7 +114,6 @@ class Stem extends React.Component {
                     </Modal.Footer>
                     
                 </Modal>
-                </div>
         <Typography variant="h3" style={{ textAlign: 'center', marginTop: 25, color: '#f5f5f5' }}>S.T.E.M</Typography>
         <video src={videos[this.state.vi]}  alt= 'logo' style={{
                   width: 1080, 
