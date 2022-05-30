@@ -77,7 +77,7 @@ class Header extends React.Component{
                 <List>
                 <ListItem button>
                         <ListItemIcon><Whatshot style={{color: '#50555a'}}/></ListItemIcon>
-                        <Link to="/views/Motivacion">
+                        <Link to="/views/menumoti">
                             <ListItemText primary="Motívate" />
                         </Link>
                     </ListItem>   

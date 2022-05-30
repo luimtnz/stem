@@ -15,6 +15,8 @@ import Motivacion from './views/Motivacion';
 import menustem from './views/menustem';
 import ciencia from './views/ciencia';
 import referencias from './views/referencias';
+import menumoti from './views/menumoti';
+import videosm from './views/videosm';
 
 const routing = (
   <Router>
@@ -29,6 +31,8 @@ const routing = (
       <Route path="/views/menustem" component={menustem} />
       <Route path="/views/ciencia" component={ciencia} />
       <Route path="/views/referencias" component={referencias} />
+      <Route path="/views/menumoti" component={menumoti} />
+      <Route path="/views/videosm" component={videosm} />
    </Provider>
   </Router>
 )

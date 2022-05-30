@@ -6,9 +6,6 @@ import TableHead from '@material-ui/core/TableHead';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
-import Modal from 'react-bootstrap/Modal';
-import Button from '@material-ui/core/Button';
-import { Link } from "react-router-dom";
 
 
 
@@ -26,12 +23,19 @@ class referencias extends React.Component {
   render() {
     return (
       <div className="login-container" style={{ backgroundColor: '#f0ffff' }}>
-        <Modal> 
-          <Modal.Header >
-          </Modal.Header>
-        </Modal>
         <Header/>
         <Typography variant="h3" style={{ textAlign: 'center', marginTop: 25, color: '#ffb6c1'}}></Typography>
+                   <object
+                   data={require('../videcien/REFERENCIAS.pdf')}
+                   style={{width: 900,
+                    height: 700,
+                     display: 'block',
+                      justifycontent: 'center',
+                      alignitems: 'center',
+                      margin: 'auto',
+                      marginTop:10}}>
+                       
+                   </object>
          <Container>
           <Grid container spacing={3}>
             <Grid item xs={9}>
