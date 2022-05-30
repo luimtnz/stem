@@ -4,7 +4,6 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import Card from '@material-ui/core/Card';
 import SweetAlert from 'sweetalert2-react';
-import domain from '../Domain';
 import '../App.css';
 
 class Login extends React.Component {
@@ -23,7 +22,7 @@ class Login extends React.Component {
   }
   iniciarSesion() {
     if (this.state.usuario === "prueba" && this.state.contrasena === "1234" )
-      this.props.history.push('/views/Motivacion');
+      this.props.history.push('/dashboard');
     else 
       alert("Credenciales invalidas")
     /*
@@ -120,7 +119,6 @@ class Login extends React.Component {
                 <div className="row h-100 justify-content-center align-items-center">
                   <Button
                     variant="contained"
-                    color= ''
                     type="submit"
                     style={{ marginBottom: 10, width: '95%' }}>
                     INGRESAR

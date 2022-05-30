@@ -15,10 +15,13 @@ import ListItemText from '@material-ui/core/ListItemText';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import MenuIcon from '@material-ui/icons/Menu';
 import SportsEsports from '@material-ui/icons/SportsEsports';
-import ImportContacts from '@material-ui/icons/ImportContacts';
 import ExitToApp from '@material-ui/icons/ExitToApp';
 import Avatar from '@material-ui/core/Avatar';
 import Grid from '@material-ui/core/Grid'; 
+import BusinessCenter from '@material-ui/icons/BusinessCenter';
+import Whatshot from '@material-ui/icons/Whatshot';
+import LocalLibrary from '@material-ui/icons/LocalLibrary';
+import HomeWork from '@material-ui/icons/HomeWork';
 import '../App.css';
 
 class Header extends React.Component{
@@ -72,7 +75,7 @@ class Header extends React.Component{
                 <Divider/>              
                 <List>
                 <ListItem button>
-                        <ListItemIcon><ImportContacts style={{color: '#50555a'}}/></ListItemIcon>
+                        <ListItemIcon><Whatshot style={{color: '#50555a'}}/></ListItemIcon>
                         <Link to="/views/Motivacion">
                             <ListItemText primary="Motívate" />
                         </Link>
@@ -83,7 +86,26 @@ class Header extends React.Component{
                             <ListItemText primary="Aprende Jugando" />
                         </Link>
                     </ListItem>
+                    <ListItem button>
+                        <ListItemIcon><HomeWork style={{color: '#50555a'}}/></ListItemIcon>
+                        <Link to="/views/Industria4.0">
+                            <ListItemText primary="Industria 4.0" />
+                        </Link>
+                    </ListItem>
+                    <ListItem button>
+                        <ListItemIcon><LocalLibrary style={{color: '#50555a'}}/></ListItemIcon>
+                        <Link to="/views/Stem">
+                            <ListItemText primary="S.T.E.M" />
+                        </Link>
+                    </ListItem>
+                    <ListItem button>
+                        <ListItemIcon><BusinessCenter style={{color: '#50555a'}}/></ListItemIcon>
+                        <Link to="/views/Datos">
+                            <ListItemText primary="¿Que Carrera es?" />
+                        </Link>
+                    </ListItem>
                 </List>    
+                
             </div>
         );
     }

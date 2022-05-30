@@ -82,12 +82,12 @@ class Stem extends React.Component {
                         <input
                         onChange={ event => { (event.target.value === preguntas[this.state.camb].respuesta) ? alert('Respuesta correcta') : alert('Respuesta incorrecta')}}
                         name="preguntas" id="preguntas" type="radio" value={preguntas[this.state.camb].opcion_1 }/>
-                        <label for="preguntas">{preguntas[this.state.camb].opcion_1}</label>
+                        <label for="preguntas">{preguntas[this.state.camb].opcion_1 }</label>
                       </div>
                       <div>
                       <input 
                         onChange={ event => { (event.target.value === preguntas[this.state.camb].respuesta) ? alert('Respuesta correcta') : alert('Respuesta incorrecta')}}
-                        type="radio" name=" preguntas" id="preguntas" value={preguntas[this.state.camb].opcion_2 }></input>
+                        type="radio" name="preguntas" id="preguntas" checked="preguntas" value={preguntas[this.state.camb].opcion_2 } ></input>
                           <label for="preguntas">{preguntas[this.state.camb].opcion_2}</label>
                       </div>
                       <div>
