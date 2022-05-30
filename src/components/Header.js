@@ -22,6 +22,7 @@ import BusinessCenter from '@material-ui/icons/BusinessCenter';
 import Whatshot from '@material-ui/icons/Whatshot';
 import LocalLibrary from '@material-ui/icons/LocalLibrary';
 import HomeWork from '@material-ui/icons/HomeWork';
+import ImportContacts from '@material-ui/icons/ImportContacts';
 import '../App.css';
 
 class Header extends React.Component{
@@ -94,7 +95,7 @@ class Header extends React.Component{
                     </ListItem>
                     <ListItem button>
                         <ListItemIcon><LocalLibrary style={{color: '#50555a'}}/></ListItemIcon>
-                        <Link to="/views/Stem">
+                        <Link to="/views/menustem">
                             <ListItemText primary="S.T.E.M" />
                         </Link>
                     </ListItem>
@@ -103,9 +104,14 @@ class Header extends React.Component{
                         <Link to="/views/Datos">
                             <ListItemText primary="¿Que Carrera es?" />
                         </Link>
+                    </ListItem>  
+                <ListItem button>
+                        <ListItemIcon><ImportContacts style={{color: '#50555a'}}/></ListItemIcon>
+                        <Link to="/views/referencias">
+                            <ListItemText primary="BIBLIOGRAFIA" />
+                        </Link>
                     </ListItem>
-                </List>    
-                
+                </List>   
             </div>
         );
     }

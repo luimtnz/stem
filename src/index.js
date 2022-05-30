@@ -12,6 +12,9 @@ import store from './redux/store';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 import Motivacion from './views/Motivacion';
+import menustem from './views/menustem';
+import ciencia from './views/ciencia';
+import referencias from './views/referencias';
 
 const routing = (
   <Router>
@@ -23,6 +26,9 @@ const routing = (
       <Route path="/views/Datos" component={Datos} />
       <Route path="/views/Stem" component={Stem} /> 
       <Route path="/views/Motivacion" component={Motivacion} />
+      <Route path="/views/menustem" component={menustem} />
+      <Route path="/views/ciencia" component={ciencia} />
+      <Route path="/views/referencias" component={referencias} />
    </Provider>
   </Router>
 )

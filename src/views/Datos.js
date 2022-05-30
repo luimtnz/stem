@@ -72,8 +72,7 @@ class Conductores extends React.Component {
                         type="text"
                         class="m-2 form-control"
                         value={this.state.letra} ></input>
-                     <div>
-                      {
+                     <div> {
                       alfabeto.map( (item, index) =>(
                         <Button 
                         key={index} onClick={()=> this.setState({letra: this.state.letra + item})}
@@ -81,8 +80,7 @@ class Conductores extends React.Component {
                         style={{ 
                         marginBottom: 10,margin: 5, padding: 2, justifycontent: 'center',
                         alignitems: 'center',position: 'center'}}>
-                          {item}
-                        </Button>))}
+                          {item}</Button>))}
                       </div> 
                       <Button 
                        variant="contained"

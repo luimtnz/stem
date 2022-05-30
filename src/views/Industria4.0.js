@@ -45,8 +45,6 @@ const preguntas =[
   }
 ]
 
-
-
 class Industria extends React.Component {
   constructor(props) {
     super(props);
@@ -84,18 +82,17 @@ class Industria extends React.Component {
                       ><label for="preguntas">{preguntas[this.state.cambio].pregunta}</label>
                       </Typography>
                       <input
-                    onChange={ event => { (event.target.value === preguntas[this.state.cambio].respuesta) ? alert('Respuesta correcta') : alert('Respuesta incorrecta')}}
-                    type="radio" id="preguntas" 
-                    name="preguntas" 
-                    value={preguntas[this.state.cambio].opcion_1}/>
+                          onChange={ event => { (event.target.value === preguntas[this.state.cambio].respuesta) ? alert('Respuesta correcta') : alert('Respuesta incorrecta')}}
+                          type="radio" id="preguntas" name="preguntas" 
+                          value={preguntas[this.state.cambio].opcion_1}/>
                       <label for="preguntas">{preguntas[this.state.cambio].opcion_1}</label>
                       <input 
-                    onChange={ event => { (event.target.value === preguntas[this.state.cambio].respuesta) ? alert('Respuesta correcta') : alert('Respuesta incorrecta')}}
-                    type="radio" id="preguntas" name="preguntas" value={preguntas[this.state.cambio].opcion_2}></input>
+                          onChange={ event => { (event.target.value === preguntas[this.state.cambio].respuesta) ? alert('Respuesta correcta') : alert('Respuesta incorrecta')}}
+                          type="radio" id="preguntas" name="preguntas" value={preguntas[this.state.cambio].opcion_2}></input>
                       <label for="preguntas">{preguntas[this.state.cambio].opcion_2}</label>
                       <input
-                    onChange={ event => { (event.target.value === preguntas[this.state.cambio].respuesta) ? alert('Respuesta correcta') : alert('Respuesta incorrecta')}}
-                     type="radio" id="preguntas" name="preguntas" value={preguntas[this.state.cambio].opcion_3}></input>
+                         onChange={ event => { (event.target.value === preguntas[this.state.cambio].respuesta) ? alert('Respuesta correcta') : alert('Respuesta incorrecta')}}
+                         type="radio" id="preguntas" name="preguntas" value={preguntas[this.state.cambio].opcion_3}></input>
                       <label for="preguntas">{preguntas[this.state.cambio].opcion_3}</label>
                       </TableCell>
                     </TableRow>
@@ -105,14 +102,14 @@ class Industria extends React.Component {
                          variant="contained"
                          color= ''
                          type="submit"
-                         style={{ position: 'fixed', top: '80%', lest: 50, marginBottom: 10, width: '15%' }}><FastRewind style={{color: '#50555a'}}/>
+                         style={{ position: 'fixed', top: '70%', lest: 50, marginBottom: 10, width: '15%' }}><FastRewind style={{color: '#50555a'}}/>
                             ANTERIOR  
                      </Button>
                          <Button onClick={() => this.setState({cambio: (this.state.cambio + 1 < -1) ? 0 : this.state.cambio + 1})}
                                  variant="contained"
                                  color= ''
                                  type="submit"
-                                 style={{ position: 'fixed', top: '80%', right: 50, marginBottom: 10, width: '15%' }}>
+                                 style={{ position: 'fixed', top: '70%', right: 50, marginBottom: 10, width: '15%' }}>
                                   SIGUENTE
                             <FastForward style={{color: '#50555a'}}/></Button>
                   </TableBody>
