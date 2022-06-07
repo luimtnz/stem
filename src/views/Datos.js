@@ -22,16 +22,16 @@ const alfabeto =['A','C','D','E','F','G','I','J','L','M','N','P','R','S','T','U'
 
 const preguntas =[
   {
-    respuesta: 'INGENERIA DE SISTEMA'
+    respuesta: 'INGENIERIA DE SISTEMA'
   }, 
   {
-    respuesta: 'INGENERIA CIVIL'
+    respuesta: 'INGENIERIA CIVIL'
   },
   {
-    respuesta: 'INGENERIA MECANICA'
+    respuesta: 'INGENIERIA MECANICA'
   },
   {
-    respuesta: 'INGENERIA INDUSTRIAL'
+    respuesta: 'INGENIERIA INDUSTRIAL'
   }
 ]
 

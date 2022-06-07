@@ -53,7 +53,7 @@ class menumoti extends React.Component {
                                 color= 'primary'
                                 type="submit"
                                 style={{ marginBottom: 10, width: '95%' }}>
-                                 VIDEO DE EXPERIANCIA 
+                                 VIDEO DE EXPERIENCIA 
                               </Button>
                               </Link>
                         </TableHead>
