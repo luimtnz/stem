@@ -89,7 +89,7 @@ class Header extends React.Component{
                     </ListItem>
                     <ListItem button>
                         <ListItemIcon><HomeWork style={{color: '#50555a'}}/></ListItemIcon>
-                        <Link to="/views/Industria4.0">
+                        <Link to="/views/menu4">
                             <ListItemText primary="Industria 4.0" />
                         </Link>
                     </ListItem>
@@ -101,7 +101,7 @@ class Header extends React.Component{
                     </ListItem>
                     <ListItem button>
                         <ListItemIcon><BusinessCenter style={{color: '#50555a'}}/></ListItemIcon>
-                        <Link to="/views/Datos">
+                        <Link to="/views/menucarr">
                             <ListItemText primary="¿Que Carrera es?" />
                         </Link>
                     </ListItem>  

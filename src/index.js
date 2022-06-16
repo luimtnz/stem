@@ -17,6 +17,11 @@ import ciencia from './views/ciencia';
 import referencias from './views/referencias';
 import menumoti from './views/menumoti';
 import videosm from './views/videosm';
+import menu4 from './views/menu4';
+import juego2 from './views/juego2';
+import menucarr from './views/menucarr';
+import quecarrera2 from './views/quecarrera2';
+import ciencia2 from './views/ciencia2';
 
 const routing = (
   <Router>
@@ -33,6 +38,11 @@ const routing = (
       <Route path="/views/referencias" component={referencias} />
       <Route path="/views/menumoti" component={menumoti} />
       <Route path="/views/videosm" component={videosm} />
+      <Route path="/views/menu4" component={menu4} />
+      <Route path="/views/juego2" component={juego2} />
+      <Route path="/views/menucarr" component={menucarr} />
+      <Route path="/views/quecarrera2" component={quecarrera2} />
+      <Route path="/views/ciencia2" component={ciencia2} />
    </Provider>
   </Router>
 )

@@ -56,6 +56,15 @@ class menustem extends React.Component {
                                  ¿QUÉ ES CIENCIA? 
                               </Button>
                               </Link>
+                              <Link to="/views/ciencia2">
+                              <Button
+                                variant="contained"
+                                color= 'primary'
+                                type="submit"
+                                style={{ marginBottom: 10, width: '95%' }}>
+                                 ¿QUÉ ES CIENCIA 2? 
+                              </Button>
+                              </Link>
                         </TableHead>
                </Table>
               </Paper>      
